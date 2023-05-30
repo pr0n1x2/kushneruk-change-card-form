@@ -1,0 +1,81 @@
+.wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.kushneruk {
+  width: 100%;
+}
+.kushneruk__field {
+  display: block;
+  width: 100%;
+}
+.kushneruk__field:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+.kushneruk__field-inner {
+  display: flex;
+}
+.kushneruk__field.error {
+  color: red;
+}
+.kushneruk__field.error .kushneruk__input {
+  border-color: red;
+}
+.kushneruk__field.error .kushneruk__input::placeholder {
+  color: red;
+}
+.kushneruk__field.error .kushneruk__error {
+  display: block;
+}
+.kushneruk__content {
+  position: relative;
+}
+.kushneruk__content.disabled {
+  display: none;
+}
+.kushneruk__input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid currentColor;
+}
+.kushneruk__error {
+  display: none;
+  font-size: 1.2rem;
+  padding: .5rem 0 0 .5em;
+}
+.kushneruk__btns {
+  text-align: center;
+}
+.kushneruk__submit {
+  background-color: #04aa6d;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+}
+.kushneruk__submit.disabled {
+  display: none;
+}
+.kushneruk__submit .fa {
+  margin-left: -12px;
+  margin-right: 5px;
+  display: none;
+}
+.kushneruk__content.loading .kushneruk__submit .fa {
+  display: inherit;
+}
+.kushneruk__btns.disabled {
+  display: none;
+}
+.kushneruk-result {
+  display: none;
+  text-align: center;
+  color: green;
+}
+.kushneruk-result.act {
+  display: block;
+}
+.kushneruk-result.error {
+  color: red;
+}

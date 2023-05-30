@@ -1,0 +1,19 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "rules": {
+    "max-len": ["error", {"code": 120, "ignoreRegExpLiterals": true, "tabWidth": 2}],
+    "no-console": "off",
+    "linebreak-style": "off",
+    "no-useless-catch": "off",
+    "no-new": "off",
+    "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
+    "no-useless-constructor": "off"
+  }
+}
